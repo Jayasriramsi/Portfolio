@@ -132,37 +132,23 @@
                     <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
                 </div>
             </div>            
-        <script>
-            var tablinks =document.getElementsByClassName("tblink");
-            var tabcontents =document.getElementsByClassName("contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                tablink.classList.remove("skill");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("skills1");
-            }
-            event.currentTarget.classList.add("skill");
-            document.getElementById(tabname).classList.add("skills1");
-        }
-        </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbziswLWiQmAPQWoJ4qxpMDEFVhIuGWBU8KQ6W5KW_NAe_rJgQDyOgImRNNWH10r8ci36w/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Submitted successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=""
-                    },2000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-    </body>
-</html>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
+                    const form = document.forms['submit-to-google-sheet'];
+                    const msg = document.getElementById('msg');
+                    form.addEventListener('submit', e => {
+                        e.preventDefault();
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                            .then(response => {
+                                msg.innerHTML = 'Message sent successfully!';
+                                setTimeout(() => (msg.innerHTML = ''), 5000);
+                                form.reset();
+                            })
+                            .catch(error => {
+                                msg.innerHTML = 'Failed to send message. Please try again.';
+                                console.error('Error!', error.message);
+                            });
+                    });
+                </script>
+            </body>
+            </html>
