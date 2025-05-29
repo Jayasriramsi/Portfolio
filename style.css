@@ -241,30 +241,45 @@ nav ul li a:hover {
 
 .conleft h1 {
   margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.conleft .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Consistent spacing between email, phone, etc. */
 }
 
 .conleft a {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px;
   text-decoration: none;
   color: #333;
   font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.conleft a:hover {
+  color: #007bff;
 }
 
 .conleft a i {
   color: #007bff;
+  font-size: 1.2rem;
 }
 
 .socicon {
   margin: 20px 0;
+  display: flex;
+  gap: 15px; /* Space between social icons */
 }
 
 .socicon a {
   font-size: 1.5rem;
   color: #333;
-  margin-right: 15px;
   transition: color 0.3s ease;
 }
 
@@ -402,13 +417,20 @@ nav ul li a:hover {
     grid-template-columns: 1fr;
   }
 
+  .conleft .contact-info {
+    align-items: center;
+  }
+
   .conleft a {
     justify-content: center;
   }
 
   .socicon {
-    display: flex;
     justify-content: center;
+  }
+
+  .but {
+    margin: 0 auto; /* Center the button */
   }
 }
 
@@ -438,5 +460,13 @@ nav ul li a:hover {
   .conright input,
   .conright textarea {
     font-size: 0.9rem;
+  }
+
+  .conleft h1 {
+    font-size: 1.5rem;
+  }
+
+  .socicon a {
+    font-size: 1.2rem;
   }
 }
