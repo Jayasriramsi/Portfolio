@@ -92,98 +92,73 @@ nav ul li a:hover {
 }
 
 /* About Section */
-#about {
-  padding: 60px 0;
-  background: #fff;
+#about{
+    padding: 80px;
+    color:#4f4a4a ;
+}
+#row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 35%;
+}
+.col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.subtit{
+    font-size: 6-px;
+    font-weight: 800;
+}
+#abtme{
+    
+    font-weight: 600;
+}
+.tabtit{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tblink{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tblink::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tblink.skill::after{
+    width: 50%;
+}
+.contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.contents ul li span{
+    font-weight: 600;
+    color: blue;
+    font-size: 18px;
+}
+.contents{
+    display: none;
+}
+.contents.skills1{
+    display: block;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.col-1 {
-  flex: 1 1 300px;
-  max-width: 350px;
-  text-align: center;
-}
-
-.col-1 img.abtimg {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.col-2 {
-  flex: 2 1 500px;
-}
-
-.subtit {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-.about-desc {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 25px;
-  color: #444;
-}
-
-/* Tabs */
-.tabtit {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.tblink {
-  font-weight: 600;
-  cursor: pointer;
-  color: #333;
-  padding: 8px 16px;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.tblink:hover,
-.tblink.active {
-  color: #007bff;
-  border-bottom: 2px solid #007bff;
-}
-
-.contents {
-  display: none;
-}
-
-.contents.active-tab {
-  display: block;
-}
-
-.contents ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contents li {
-  margin-bottom: 15px;
-  font-size: 1rem;
-  color: #444;
-}
-
-.contents li span {
-  font-weight: 600;
-  color: #007bff;
-}
 
 /* Projects Section */
 #projects {
