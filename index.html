@@ -133,6 +133,20 @@
       <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
     </div>
   </div>
+  <script>
+    var tablinks =document.getElementsByClassName("tblink");
+    var tabcontents =document.getElementsByClassName("contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("skill");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("skills1");
+      }
+      event.currentTarget.classList.add("skill");
+      document.getElementById(tabname).classList.add("skills1");
+    }
+  </script>
  <script>
   const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
   const form = document.forms['submit-to-google-sheet'];
