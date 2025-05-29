@@ -109,49 +109,97 @@ nav ul li a:hover::after{
     font-size: 6-px;
     font-weight: 800;
 }
-#abtme{
-    
-    font-weight: 600;
+#about {
+  padding: 50px 0;
 }
-.tabtit{
-    display: flex;
-    margin: 20px 0 40px;
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-.tblink{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.tblink::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: blue;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+
+.col-1 {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 20px;
 }
-.tblink.skill::after{
-    width: 50%;
+
+.abtimg {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
 }
-.contents ul li{
-    list-style: none;
-    margin: 10px 0;
+
+.col-2 {
+  flex: 2;
+  padding: 20px;
 }
-.contents ul li span{
-    font-weight: 600;
-    color: blue;
-    font-size: 18px;
+
+.subtit {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
 }
-.contents{
-    display: none;
+
+.about-desc {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #444;
 }
-.contents.skills1{
-    display: block;
+
+.tabtit {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
 }
+
+.tblink {
+  cursor: pointer;
+  font-weight: 500;
+  color: #444;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.tblink.active {
+  color: #000;
+  border-bottom: 2px solid blue;
+}
+
+.contents {
+  display: none;
+  margin-top: 20px;
+}
+
+.active-tab {
+  display: block;
+}
+
+.contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contents li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contents li span {
+  font-weight: bold;
+  color: blue;
+}
+
 /*-------------------projects------------------*/
 #projects{
     padding: 30px 0;
