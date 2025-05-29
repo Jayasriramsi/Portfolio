@@ -133,25 +133,23 @@
       <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
     </div>
   </div>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
+ <script>
+  const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
   const form = document.forms['submit-to-google-sheet'];
   const msg = document.getElementById('msg');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => {
-        msg.innerHTML = 'Message sent successfully!';
-        setTimeout(() => (msg.innerHTML = ''), 5000);
-        form.reset();
-      })
-      .catch(error => {
-        msg.innerHTML = 'Failed to send message. Please try again.';
-        console.error('Error!', error.message);
-      });
-  });
-  </script>
+   form.addEventListener('submit', e => {
+     e.preventDefault();
+     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+       .then(response => {
+         msg.innerHTML = 'Message sent successfully!';
+         setTimeout(() => (msg.innerHTML = ''), 5000);
+         form.reset();
+       })
+       .catch(error => {
+         msg.innerHTML = 'Failed to send message. Please try again.';
+         console.error('Error!', error.message);
+       });
+   });
+ </script>
 </body>
 </html>
