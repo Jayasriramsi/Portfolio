@@ -34,71 +34,70 @@
     </div>
   </div>
 
- <!-- About -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-1">
-        <img src="JAYASRIRAM PHOTO.jpg" class="abtimg" alt="Jayasriram S I" />
-      </div>
-      <div class="col-2">
-        <h1 class="subtit">About Me</h1>
-        <p class="about-desc">
-          Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br>
-          Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br>
-          Eager to contribute my skills to innovative projects, I am committed to continuous learning in this ever-evolving tech landscape.
-        </p>
-
-        <div class="tabtit">
-          <p class="tblink active" onclick="opentab('skills')">Skills</p>
-          <p class="tblink" onclick="opentab('experience')">Experience</p>
-          <p class="tblink" onclick="opentab('education')">Education</p>
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="JAYASRIRAM PHOTO.jpg" class="abtimg" alt="Jayasriram S I" />
         </div>
+        <div class="col-2">
+          <h1 class="subtit">About Me</h1>
+          <p class="about-desc">
+            Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br>
+            Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br>
+            Eager to contribute my skills to innovative projects, I am committed to continuous learning in this ever-evolving tech landscape.
+          </p>
 
-        <div class="contents active-tab" id="skills">
-          <ul>
-            <li><span>Core Java</span><br />Programming language</li>
-            <li><span>Python Basics</span><br />Programming language</li>
-            <li><span>SQL</span><br />Database</li>
-            <li><span>HTML & CSS</span><br />Frontend tools</li>
-          </ul>
-        </div>
+          <div class="tabtit">
+            <p class="tblink active" onclick="opentab('skills', event)">Skills</p>
+            <p class="tblink" onclick="opentab('experience', event)">Experience</p>
+            <p class="tblink" onclick="opentab('education', event)">Education</p>
+          </div>
 
-        <div class="contents" id="experience">
-          <ul>
-            <li><span>2023-Current</span><br />AI Intern, Techy Geeks, Pondicherry</li>
-          </ul>
-        </div>
+          <div class="contents active-tab" id="skills">
+            <ul>
+              <li><span>Core Java</span><br />Programming language</li>
+              <li><span>Python Basics</span><br />Programming language</li>
+              <li><span>SQL</span><br />Database</li>
+              <li><span>HTML & CSS</span><br />Frontend tools</li>
+            </ul>
+          </div>
 
-        <div class="contents" id="education">
-          <ul>
-            <li><span>2023-2025</span><br />MSc Computer Science, SASTRA University, Kumbakonam</li>
-            <li><span>2020-2023</span><br />BSc Computer Science, Bishop Heber College, Trichy</li>
-          </ul>
+          <div class="contents" id="experience">
+            <ul>
+              <li><span>2023-Current</span><br />AI Intern, Techy Geeks, Pondicherry</li>
+            </ul>
+          </div>
+
+          <div class="contents" id="education">
+            <ul>
+              <li><span>2023-2025</span><br />MSc Computer Science, SASTRA University, Kumbakonam</li>
+              <li><span>2020-2023</span><br />BSc Computer Science, Bishop Heber College, Trichy</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- Projects -->
   <div id="projects">
     <div class="container">
-      <h1 class="subtit">Projects</h1>
+      <h1 class="subtit">My Projects</h1>
       <div class="projectlist">
-        <div id="SLD">
         <div>
-          <i class="fa-solid fa-book-atlas"></i>
+          <i class="fa-solid fa-video"></i>
           <h2>Suspicious Activity Detection Using Transfer Learning</h2>
           <p>Enhanced CCTV surveillance systems using Python and TensorFlow. Implemented Transfer Learning to detect suspicious activities such as shoplifting.</p>
         </div>
         <div>
-          <i class="fa-solid fa-book-atlas"></i>
+          <i class="fa-solid fa-brain"></i>
           <h2>GUI-Based MRI Brain Tumor Classification Using VGG Models</h2>
           <p>Developed a user-friendly GUI application to classify brain tumors using VGG architecture. Focused on medical imaging and early detection.</p>
         </div>
         <div>
-          <i class="fa-solid fa-book-atlas"></i>
+          <i class="fa-solid fa-microscope"></i>
           <h2>MRI Brain Tumor Identification Using Multi-Class Classification</h2>
           <p>Designed a CNN-based multi-class model with GUI for real-time MRI scan analysis. Improved diagnostic accuracy by distinguishing between tumor types.</p>
         </div>
@@ -112,8 +111,8 @@
       <div class="row">
         <div class="conleft">
           <h1 class="subtit">Contact Me</h1>
-          <a href="mailto:Jayasriram0203@gmail.com"><i class="fa-solid fa-envelope"></i> Jayasriram0203@gmail.com</a><br />
-          <a href="tel:+919384997258"><i class="fa-solid fa-mobile-retro"></i> +91 9384997258</a><br />
+          <a href="mailto:Jayasriram0203@gmail.com"><i class="fa-solid fa-envelope"></i> Jayasriram0203@gmail.com</a>
+          <a href="tel:+919384997258"><i class="fa-solid fa-mobile-retro"></i> +91 9384997258</a>
           <div class="socicon">
             <a href="https://www.linkedin.com/in/jayasriram27" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
@@ -135,41 +134,41 @@
       <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
     </div>
   </div>
- <script>
-   var tablinks = document.getElementsByClassName("tblink");
-   var tabcontents = document.getElementsByClassName("contents");
-   function opentab(tabname) {
-     // Remove 'active' class from all tab links
-     for (let tablink of tablinks) {
-       tablink.classList.remove("active");
-     }
-     // Remove 'active-tab' class from all tab contents
-     for (let tabcontent of tabcontents) {
-       tabcontent.classList.remove("active-tab")
-     }
-     // Add 'active' class to the clicked tab link
-     event.currentTarget.classList.add("active");
-     // Add 'active-tab' class to the corresponding tab content
-     document.getElementById(tabname).classList.add("active-tab");
-   }
- </script>
- <script>
-  const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
-  const form = document.forms['submit-to-google-sheet'];
-  const msg = document.getElementById('msg');
-   form.addEventListener('submit', e => {
-     e.preventDefault();
-     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-       .then(response => {
-         msg.innerHTML = 'Message sent successfully!';
-         setTimeout(() => (msg.innerHTML = ''), 5000);
-         form.reset();
-       })
-       .catch(error => {
-         msg.innerHTML = 'Failed to send message. Please try again.';
-         console.error('Error!', error.message);
-       });
-   });
- </script>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tblink");
+    var tabcontents = document.getElementsByClassName("contents");
+    
+    function opentab(tabname, event) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = 'Message sent successfully!';
+          setTimeout(() => (msg.innerHTML = ''), 5000);
+          form.reset();
+        })
+        .catch(error => {
+          msg.innerHTML = 'Failed to send message. Please try again.';
+          console.error('Error!', error.message);
+        });
+    });
+  </script>
 </body>
 </html>
