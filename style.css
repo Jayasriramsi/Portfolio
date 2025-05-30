@@ -34,16 +34,11 @@ nav{
 }
 
 .logo {
-  width: 140px;              /* total size including padding */
-  height: 140px;
-  border-radius: 50%;        /* circle shape */
-  object-fit: cover;         /* cover image without distortion */
+  width: 210px;       /* your desired width */
+  height: auto;       /* maintains aspect ratio */
   display: block;
-  border: 2px solid #333;    /* subtle border */
-  background: white;         /* background inside circle */
-  padding: 10px;             /* space inside border */
-  box-sizing: border-box;    /* include padding and border in size */
 }
+
 
 nav ul li{
     display: inline-block;
