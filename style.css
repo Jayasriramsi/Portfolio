@@ -34,9 +34,12 @@ nav{
 }
 
 .logo {
-  width: 210px;       /* your desired width */
-  height: auto;       /* maintains aspect ratio */
+  width: auto;              /* or set a specific width like 210px */
+  height: auto;             /* keeps original aspect ratio */
   display: block;
+  border: none;             /* optional: remove border */
+  background: none;         /* remove background */
+  padding: 0;               /* remove padding */
 }
 
 
