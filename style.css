@@ -34,14 +34,14 @@ nav{
 }
 
 .logo {
-  width: auto;              /* or set a specific width like 210px */
-  height: auto;             /* keeps original aspect ratio */
-  display: block;
-  border: none;             /* optional: remove border */
-  background: none;         /* remove background */
-  padding: 0;               /* remove padding */
-}
-
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
 
 nav ul li{
     display: inline-block;
