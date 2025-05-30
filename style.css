@@ -300,7 +300,6 @@ form input, form textarea{
     outline: none;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
     font-size: 18px;
     border-radius: 6px;
     border: 1px solid #555;
@@ -314,7 +313,6 @@ form input::placeholder, form textarea::placeholder{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
     font-weight: 300;
     margin-top: 20px;
     border-top: 1px solid #555;
