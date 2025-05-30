@@ -34,11 +34,14 @@ nav{
 }
 
 .logo {
-    width: 100px;           /* Same as height */
-    height: 100px;          /* Same as width */
+    width: 120px;           /* Equal dimensions for perfect circle */
+    height: 120px;
     border-radius: 50%;
-    object-fit: cover;      /* Prevents distortion */
+    object-fit: cover;      /* Maintains the logo's aspect ratio */
     display: block;
+    border: 2px solid #333; /* Optional: adds a subtle border */
+    background: white;      /* White background to complement the logo */
+    padding: 10px;          /* Adds space around the logo inside the circle */
 }
 
 nav ul li{
