@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,6 @@
   <title>Jayasriram S I | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="JayaSriraM S I.jpg" type="image/jpeg" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/29b2526332.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,29 +18,19 @@
   <div id="header">
     <div class="container">
       <nav>
-        <div class="logo-container">
-          <img src="JayaSriraM S I.jpg" class="logo" alt="Jayasriram S I" />
-          <span class="logo-text">Jayasriram S I</span>
-        </div>
-        <ul class="nav-menu">
+        <img src="JayaSriraM S I.jpg" class="logo" alt="Jayasriram S I" />
+        <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>
-            Hi, I'm <span class="highlight">Jayasriram S I</span><br />
-            <span class="location">from Ariyalur, India</span>
-          </h1>
-          <p class="hero-subtitle">AI Enthusiast | Deep Learning Specialist | Problem Solver</p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary">View My Work</a>
-            <a href="#contact" class="btn secondary">Get In Touch</a>
-          </div>
-        </div>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 75vh; text-align: center; padding-top: 10vh;">
+        <h1 style="font-size: 52px; font-weight: bold; line-height: 1.4;">
+          Hi, I'm <span style="color: blue;">Jayasriram S I</span><br />
+          from Ariyalur, India
+        </h1>
       </div>
     </div>
   </div>
@@ -50,80 +40,42 @@
     <div class="container">
       <div class="row">
         <div class="col-1">
-          <div class="image-container">
-            <img src="JAYASRIRAM PHOTO.jpg" class="abtimg" alt="Jayasriram S I" />
-          </div>
+          <img src="JAYASRIRAM PHOTO.jpg" class="abtimg" alt="Jayasriram S I" />
         </div>
         <div class="col-2">
-          <h1 class="section-title">About Me</h1>
+          <h1 class="subtit">About Me</h1>
           <p class="about-desc">
-            Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br><br>
-            Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br><br>
+            Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br>
+            Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br>
             Eager to contribute my skills to innovative projects, I am committed to continuous learning in this ever-evolving tech landscape.
           </p>
 
-          <div class="tab-container">
-            <div class="tab-buttons">
-              <button class="tab-btn active" onclick="openTab('skills', event)">Skills</button>
-              <button class="tab-btn" onclick="openTab('experience', event)">Experience</button>
-              <button class="tab-btn" onclick="openTab('education', event)">Education</button>
-            </div>
+          <div class="tabtit">
+            <p class="tblink active" onclick="opentab('skills', event)">Skills</p>
+            <p class="tblink" onclick="opentab('experience', event)">Experience</p>
+            <p class="tblink" onclick="opentab('education', event)">Education</p>
+          </div>
 
-            <div class="tab-content active" id="skills">
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fab fa-java"></i>
-                  <h4>Core Java</h4>
-                  <p>Programming Language</p>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-python"></i>
-                  <h4>Python Basics</h4>
-                  <p>Programming Language</p>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-database"></i>
-                  <h4>SQL</h4>
-                  <p>Database</p>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-html5"></i>
-                  <h4>HTML & CSS</h4>
-                  <p>Frontend Tools</p>
-                </div>
-              </div>
-            </div>
+          <div class="contents active-tab" id="skills">
+            <ul>
+              <li><span>Core Java</span><br />Programming language</li>
+              <li><span>Python Basics</span><br />Programming language</li>
+              <li><span>SQL</span><br />Database</li>
+              <li><span>HTML & CSS</span><br />Frontend tools</li>
+            </ul>
+          </div>
 
-            <div class="tab-content" id="experience">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-date">2023 - Current</div>
-                  <div class="timeline-content">
-                    <h4>AI Intern</h4>
-                    <p>Techy Geeks, Pondicherry</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="contents" id="experience">
+            <ul>
+              <li><span>2023-Current</span><br />AI Intern, Techy Geeks, Pondicherry</li>
+            </ul>
+          </div>
 
-            <div class="tab-content" id="education">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-date">2023 - 2025</div>
-                  <div class="timeline-content">
-                    <h4>MSc Computer Science</h4>
-                    <p>SASTRA University, Kumbakonam</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-date">2020 - 2023</div>
-                  <div class="timeline-content">
-                    <h4>BSc Computer Science</h4>
-                    <p>Bishop Heber College, Trichy</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="contents" id="education">
+            <ul>
+              <li><span>2023-2025</span><br />MSc Computer Science, SASTRA University, Kumbakonam</li>
+              <li><span>2020-2023</span><br />BSc Computer Science, Bishop Heber College, Trichy</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -133,45 +85,22 @@
   <!-- Projects -->
   <div id="projects">
     <div class="container">
-      <h1 class="section-title">My Projects</h1>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-icon">
-            <i class="fa-solid fa-video"></i>
-          </div>
-          <h3>Suspicious Activity Detection Using Transfer Learning</h3>
+      <h1 class="subtit">My Projects</h1>
+      <div class="projectlist">
+        <div>
+          <i class="fa-solid fa-video"></i>
+          <h2>Suspicious Activity Detection Using Transfer Learning</h2>
           <p>Enhanced CCTV surveillance systems using Python and TensorFlow. Implemented Transfer Learning to detect suspicious activities such as shoplifting.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">Transfer Learning</span>
-          </div>
         </div>
-        
-        <div class="project-card">
-          <div class="project-icon">
-            <i class="fa-solid fa-brain"></i>
-          </div>
-          <h3>GUI-Based MRI Brain Tumor Classification Using VGG Models</h3>
+        <div>
+          <i class="fa-solid fa-brain"></i>
+          <h2>GUI-Based MRI Brain Tumor Classification Using VGG Models</h2>
           <p>Developed a user-friendly GUI application to classify brain tumors using VGG architecture. Focused on medical imaging and early detection.</p>
-          <div class="project-tags">
-            <span class="tag">VGG</span>
-            <span class="tag">GUI</span>
-            <span class="tag">Medical AI</span>
-          </div>
         </div>
-        
-        <div class="project-card">
-          <div class="project-icon">
-            <i class="fa-solid fa-microscope"></i>
-          </div>
-          <h3>MRI Brain Tumor Identification Using Multi-Class Classification</h3>
+        <div>
+          <i class="fa-solid fa-microscope"></i>
+          <h2>MRI Brain Tumor Identification Using Multi-Class Classification</h2>
           <p>Designed a CNN-based multi-class model with GUI for real-time MRI scan analysis. Improved diagnostic accuracy by distinguishing between tumor types.</p>
-          <div class="project-tags">
-            <span class="tag">CNN</span>
-            <span class="tag">Multi-class</span>
-            <span class="tag">Real-time</span>
-          </div>
         </div>
       </div>
     </div>
@@ -181,73 +110,49 @@
   <div id="contact">
     <div class="container">
       <div class="row">
-        <div class="contact-left">
-          <h1 class="section-title">Contact Me</h1>
-          <p class="contact-subtitle">Let's connect and create something amazing together!</p>
-          
-          <div class="contact-info">
-            <a href="mailto:Jayasriram0203@gmail.com" class="contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Jayasriram0203@gmail.com</span>
-            </a>
-            <a href="tel:+919384997258" class="contact-item">
-              <i class="fa-solid fa-mobile-retro"></i>
-              <span>+91 9384997258</span>
-            </a>
+        <div class="conleft">
+          <h1 class="subtit">Contact Me</h1>
+          <a href="mailto:Jayasriram0203@gmail.com"><i class="fa-solid fa-envelope"></i> Jayasriram0203@gmail.com</a>
+          <a href="tel:+919384997258"><i class="fa-solid fa-mobile-retro"></i> +91 9384997258</a>
+          <div class="socicon">
+            <a href="https://www.linkedin.com/in/jayasriram27" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-          
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/jayasriram27" target="_blank" class="social-link">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-          
-          <a href="Jayasriram%20S%20I%20Resume.pdf" download class="btn download-btn">
-            <i class="fas fa-download"></i>
-            Download CV
-          </a>
+          <a href="Jayasriram%20S%20I%20Resume.pdf" download class="but but2">Download CV</a>
         </div>
 
-        <div class="contact-right">
-          <form name="submit-to-google-sheet" class="contact-form">
-            <div class="form-group">
-              <input type="text" name="Name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <input type="email" name="Email" placeholder="Your Email" required />
-            </div>
-            <div class="form-group">
-              <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn submit-btn">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
-            </button>
+        <div class="conright">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="but but2">Submit</button>
           </form>
           <span id="msg"></span>
         </div>
       </div>
     </div>
-    
-    <div class="footer">
-      <p>Made with <i class="fa-solid fa-heart"></i> by Jayasriram S I</p>
+    <div class="copyright">
+      <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
     </div>
   </div>
 
   <script>
-    // Tab functionality
-    function openTab(tabName, event) {
-      const tabContents = document.querySelectorAll('.tab-content');
-      const tabButtons = document.querySelectorAll('.tab-btn');
-      
-      tabContents.forEach(content => content.classList.remove('active'));
-      tabButtons.forEach(button => button.classList.remove('active'));
-      
-      document.getElementById(tabName).classList.add('active');
-      event.target.classList.add('active');
+    var tablinks = document.getElementsByClassName("tblink");
+    var tabcontents = document.getElementsByClassName("contents");
+    
+    function opentab(tabname, event) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active");
+      document.getElementById(tabname).classList.add("active-tab");
     }
+  </script>
 
-    // Form submission
+  <script>
     const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById('msg');
@@ -256,30 +161,14 @@
       e.preventDefault();
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          msg.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully!';
-          msg.style.color = '#4ade80';
+          msg.innerHTML = 'Message sent successfully!';
           setTimeout(() => (msg.innerHTML = ''), 5000);
           form.reset();
         })
         .catch(error => {
-          msg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again.';
-          msg.style.color = '#ef4444';
+          msg.innerHTML = 'Failed to send message. Please try again.';
           console.error('Error!', error.message);
         });
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
     });
   </script>
 </body>
