@@ -42,7 +42,7 @@ nav{
     background: white;
     padding: 10px;
     box-sizing: border-box;
-
+}
 nav ul li{
     display: inline-block;
     list-style: none;
