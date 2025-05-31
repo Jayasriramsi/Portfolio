@@ -304,14 +304,16 @@ form textarea {
     font-size: 18px;
     border-radius: 6px;
     border: 1px solid #555;
-    text-align: right; /* Keep this */
+    text-align: right; /* Keeps user text to the right */
+    direction: rtl; /* Forces both placeholder + text to align right */
 }
 
 form input::placeholder,
 form textarea::placeholder {
-    text-align: right; /* Optional: helps for some browsers */
     color: #ccc;
+    direction: rtl; /* Ensures placeholder respects right alignment */
 }
+
 
 
 .copyright{
