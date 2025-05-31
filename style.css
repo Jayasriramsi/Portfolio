@@ -217,20 +217,20 @@ nav ul li a:hover::after{
 }
 
 /* Contact Section */
-#contact{
+#contact {
     padding: 80px 0;
-    color: Black;
+    color: black;
 }
 
-.conleft{
+.conleft {
     flex-basis: 35%;
 }
 
-.conright{
+.conright {
     flex-basis: 60%;
 }
 
-.conleft a{
+.conleft a {
     text-decoration: none;
     color: #ababab;
     font-size: 18px;
@@ -239,26 +239,26 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 
-.conleft a:hover{
+.conleft a:hover {
     color: blue;
     transform: translateY(-5px);
 }
 
-.conleft a i{
+.conleft a i {
     color: rgb(75, 45, 175);
     margin-right: 15px;
     font-size: 25px;
 }
 
-.conleft a:hover i{
+.conleft a:hover i {
     color: blue;
 }
 
-.socicon{
+.socicon {
     margin-top: 30px;
 }
 
-.socicon a{
+.socicon a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -267,12 +267,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 
-.socicon a:hover{
+.socicon a:hover {
     color: blue;
     transform: translateY(-5px);
 }
 
-.but.but2{
+.but.but2 {
     text-decoration: none;
     margin-top: 30px;
     padding: 14px 50px;
@@ -285,12 +285,12 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 
-.but.but2:hover{
+.but.but2:hover {
     background-color: blue;
     color: white;
 }
 
-.conright form{
+.conright form {
     width: 100%;
 }
 
@@ -304,17 +304,29 @@ form textarea {
     font-size: 18px;
     border-radius: 6px;
     border: 1px solid #555;
-    text-align: right; /* Keeps user text to the right */
-    direction: rtl; /* Forces both placeholder + text to align right */
+    text-align: right;
+    direction: rtl;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
 }
 
 form input::placeholder,
 form textarea::placeholder {
     color: #ccc;
-    direction: rtl; /* Ensures placeholder respects right alignment */
+    direction: rtl;
 }
 
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
 
+form input:focus,
+form textarea:focus {
+    border-color: rgb(75, 45, 175);
+    box-shadow: 0 0 5px rgba(75, 45, 175, 0.3);
+}
 
 .copyright{
     width: 100%;
