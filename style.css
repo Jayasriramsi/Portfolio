@@ -304,13 +304,15 @@ form textarea {
     font-size: 18px;
     border-radius: 6px;
     border: 1px solid #555;
-    text-align: right; /* Add this */
+    text-align: right; /* Keep this */
 }
 
-form input::placeholder, form textarea::placeholder{
-    text-align: right;
+form input::placeholder,
+form textarea::placeholder {
+    text-align: right; /* Optional: helps for some browsers */
     color: #ccc;
 }
+
 
 .copyright{
     width: 100%;
