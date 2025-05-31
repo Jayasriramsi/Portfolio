@@ -308,6 +308,7 @@ form textarea {
 }
 
 form input::placeholder, form textarea::placeholder{
+    text-align: right;
     color: #ccc;
 }
 
