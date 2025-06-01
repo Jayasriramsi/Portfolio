@@ -216,116 +216,131 @@ nav ul li a:hover::after{
     color: white;
 }
 
-/* Contact Section */
+/* === Contact Section Styling === */
 #contact {
-    padding: 80px 0;
-    color: black;
+    padding: 80px 0;              /* Adds vertical spacing (top and bottom) */
+    color: black;                 /* Text color for the contact section */
 }
 
+/* === Left Side of the Contact Section (e.g., contact info or links) === */
 .conleft {
-    flex-basis: 35%;
+    flex-basis: 35%;              /* Takes 35% width inside a flex container */
 }
 
+/* === Right Side of the Contact Section (e.g., form) === */
 .conright {
-    flex-basis: 60%;
+    flex-basis: 60%;              /* Takes 60% width inside a flex container */
 }
 
+/* === Contact links in the left panel === */
 .conleft a {
-    text-decoration: none;
-    color: #ababab;
-    font-size: 18px;
-    margin-top: 30px;
-    display: block;
-    transition: transform 0.5s;
+    text-decoration: none;        /* Removes underline from links */
+    color: #ababab;               /* Gray color for links */
+    font-size: 18px;              /* Medium-large font size */
+    margin-top: 30px;             /* Spacing above each link */
+    display: block;               /* Makes the link take full width */
+    transition: transform 0.5s;   /* Smooth animation on hover */
 }
 
+/* === Hover effect for contact links === */
 .conleft a:hover {
-    color: blue;
-    transform: translateY(-5px);
+    color: blue;                  /* Changes text color on hover */
+    transform: translateY(-5px);  /* Moves the link slightly up */
 }
 
+/* === Icon inside the contact links === */
 .conleft a i {
-    color: rgb(75, 45, 175);
-    margin-right: 15px;
-    font-size: 25px;
+    color: rgb(75, 45, 175);      /* Purple shade for icons */
+    margin-right: 15px;           /* Space between icon and text */
+    font-size: 25px;              /* Icon size */
 }
 
+/* === Hover effect for icons === */
 .conleft a:hover i {
-    color: blue;
+    color: blue;                  /* Icon turns blue on hover */
 }
 
+/* === Social Media Icon Section === */
 .socicon {
-    margin-top: 30px;
+    margin-top: 30px;             /* Spacing above social icons */
 }
 
 .socicon a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: rgb(75, 45, 175);
-    display: inline-block;
-    transition: transform 0.5s;
+    text-decoration: none;        /* No underline on icons */
+    font-size: 30px;              /* Large icon size */
+    margin-right: 15px;           /* Space between icons */
+    color: rgb(75, 45, 175);      /* Purple color for icons */
+    display: inline-block;        /* Keeps icons inline */
+    transition: transform 0.5s;   /* Smooth movement effect */
 }
 
+/* === Hover effect for social icons === */
 .socicon a:hover {
-    color: blue;
-    transform: translateY(-5px);
+    color: blue;                  /* Icon color changes to blue */
+    transform: translateY(-5px);  /* Moves icon slightly up */
 }
 
+/* === Button Style (likely for "Send" button) === */
 .but.but2 {
-    text-decoration: none;
-    margin-top: 30px;
-    padding: 14px 50px;
-    border-radius: 6px;
-    display: inline-block;
-    background: rgb(75, 45, 175);
-    transition-duration: 0.4s;
-    color: white;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;        /* No underline */
+    margin-top: 30px;             /* Space above button */
+    padding: 14px 50px;           /* Vertical and horizontal padding */
+    border-radius: 6px;           /* Rounded corners */
+    display: inline-block;        /* Allows margin and padding */
+    background: rgb(75, 45, 175); /* Purple background */
+    transition-duration: 0.4s;    /* Animation duration for hover */
+    color: white;                 /* Text color */
+    border: none;                 /* No border */
+    cursor: pointer;              /* Cursor changes to hand pointer */
 }
 
+/* === Hover effect for button === */
 .but.but2:hover {
-    background-color: blue;
-    color: white;
+    background-color: blue;       /* Button turns blue on hover */
+    color: white;                 /* Keeps text white */
 }
 
+/* === Contact Form Layout === */
 .conright form {
-    width: 100%;
+    width: 100%;                  /* Form takes full width of container */
 }
 
+/* === Style for input fields and textarea === */
 form input,
 form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 18px;
-    border-radius: 6px;
-    border: 1px solid #555;
-    text-align: right;
-    direction: rtl;
-    background-color: transparent;
-    color: inherit;
-    font-family: inherit;
+    width: 100%;                  /* Full width */
+    border: 0;                    /* No default border */
+    outline: none;                /* No focus outline */
+    padding: 15px;                /* Internal spacing */
+    margin: 15px 0;               /* Vertical spacing between fields */
+    font-size: 18px;              /* Font size */
+    border-radius: 6px;           /* Rounded corners */
+    border: 1px solid #555;       /* Subtle gray border */
+    text-align: right;            /* Align text to the right */
+    direction: rtl;               /* Right-to-left text direction */
+    background-color: transparent; /* Transparent background */
+    color: inherit;               /* Inherits text color from parent */
+    font-family: inherit;         /* Uses parent font */
 }
 
+/* === Placeholder style for input and textarea === */
 form input::placeholder,
 form textarea::placeholder {
-    color: #ccc;
-    direction: rtl;
+    color: #ccc;                  /* Light gray placeholder text */
+    direction: rtl;               /* Right-to-left alignment for placeholder */
 }
 
+/* === Textarea specific style === */
 form textarea {
-    min-height: 120px;
-    resize: vertical;
+    min-height: 120px;            /* Ensures sufficient height */
+    resize: vertical;             /* Allows vertical resizing only */
 }
 
+/* === Input and textarea focus effect === */
 form input:focus,
 form textarea:focus {
-    border-color: rgb(75, 45, 175);
-    box-shadow: 0 0 5px rgba(75, 45, 175, 0.3);
+    border-color: rgb(75, 45, 175);              /* Highlighted border */
+    box-shadow: 0 0 5px rgba(75, 45, 175, 0.3);   /* Purple glow on focus */
 }
 
 .copyright{
