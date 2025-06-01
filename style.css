@@ -408,11 +408,27 @@ form button.but2 {
     color: rgb(75, 45, 175);
 }
 
-#msg{
-    color: #61b752;
-    margin-top: 10px;
-    display: block;
+#msg {
+  margin-top: 15px;
+  font-size: 20px;       /* bigger font size */
+  font-weight: 700;      /* bold */
+  color: green;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+  text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.7); /* subtle green glow */
 }
+
+#msg.show {
+  opacity: 1;
+}
+
+#msg.error {
+  color: red;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.7); /* subtle red glow */
+}
+
 
 /* === Responsive Design for Screens < 600px === */
 @media only screen and (max-width: 600px) {
