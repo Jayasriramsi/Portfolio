@@ -4,12 +4,12 @@ This is my **personal portfolio website**, showcasing my skills, projects, resea
 
 🔗 **Live Demo:** [jayasriramsi.github.io/Portfolio](https://jayasriramsi.github.io/Portfolio)
 
-## 📌 Features
+## Features
 
-* 📝 **About Me / Career Objective** – Short introduction and career goals
-* ⚡ **Technical Expertise** – Skills in Java Full Stack & Machine Learning
-* 🚀 **Projects** – Highlighting academic & research projects with technologies used and descriptions
-* 🎤 **Research & Presentations** – Conference papers and publications
+* **About Me / Career Objective** – Short introduction and career goals
+* **Technical Expertise** – Skills in Java Full Stack & Machine Learning
+* **Projects** – Highlighting academic & research projects with technologies used and descriptions
+* **Research & Presentations** – Conference papers and publications
 * 🎓 **Education** – Academic background
 * 🏅 **Certifications** – Professional certifications in Java, SQL, AI, etc.
 * 📬 **Contact Information** – LinkedIn, Portfolio, and Resume links
