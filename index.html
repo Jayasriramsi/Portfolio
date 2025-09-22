@@ -1,215 +1,268 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Jayasriram S I – AI intern, MSc CS Student, and Deep Learning enthusiast." />
-  <meta name="google-site-verification" content="y0TCSlVYES5eZDUb272BnrnTYjGKmBA9U2bc_l6r61s" />
-  <meta name="keywords" content="Jayasriram S I, AI, Deep Learning, Brain Tumor Classification, Portfolio" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0YKGVYRFV"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayasriram S I - Java Full Stack & ML Developer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-Z0YKGVYRFV');
+    gtag('config', 'GA_MEASUREMENT_ID');
   </script>
-  <title>Jayasriram S I | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="JayaSriraM S I.jpg" type="image/jpeg" />
-  <script src="https://kit.fontawesome.com/29b2526332.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Header -->
-  <div id="header">
+  <header id="header">
     <div class="container">
       <nav>
-        <img src="JayaSriraM S I.jpg" class="logo" alt="Jayasriram S I" />
+        <img src="JayaSriraM_S_I-removebg-preview.png" class="logo" alt="Jayasriram S I Photo">
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 75vh; text-align: center; padding-top: 10vh;">
-        <h1 style="font-size: 52px; font-weight: bold; line-height: 1.4;">
-          <p>
-            Hi, I'm <span style="background: linear-gradient(to right, #00C9FF, #92FE9D);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;">Jayasriram S I
-            </span><br /> from Ariyalur, India
-          </p>
+
+      <div class="hero-content">
+        <h1>
+          Hi, I'm <span class="highlight">Jayasriram S I</span><br>
+          <span id="changing-text">from Ariyalur, India</span>
         </h1>
       </div>
     </div>
-  </div>
+  </header>
 
   <!-- About -->
-  <div id="about">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-1">
-          <img src="JAYASRIRAM PHOTO.jpg" class="abtimg" alt="Jayasriram S I" />
+          <img src="Sriram.png" class="abtimg" alt="About Jayasriram">
         </div>
         <div class="col-2">
           <h1 class="subtit">About Me</h1>
-          <p class="about-desc">
-            Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br>
-            Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br>
-            Eager to contribute my skills to innovative projects, I am committed to continuous learning in this ever-evolving tech landscape.
+          <p id="abtme">
+            Aspiring for a challenging role in Software Development / AI Engineering at a dynamic organization
+            where I can leverage my expertise in Python, Java, Spring Boot, Microservices, REST APIs, databases,
+            and AI/ML technologies to build scalable, high-performance solutions.
           </p>
 
           <div class="tabtit">
-            <p class="tblink active" onclick="opentab('skills', event)">Skills</p>
-            <p class="tblink" onclick="opentab('experience', event)">Experience</p>
-            <p class="tblink" onclick="opentab('education', event)">Education</p>
+            <p class="tblink skill" onclick="opentab('skills')">Skills</p>
+            <p class="tblink" onclick="opentab('experience')">Experience</p>
+            <p class="tblink" onclick="opentab('education')">Education</p>
           </div>
 
-          <div class="contents active-tab" id="skills">
+          <!-- Skills -->
+          <div class="contents skills1" id="skills">
             <ul>
-              <li><span>Core Java</span><br />Programming language</li>
-              <li><span>Python Basics</span><br />Programming language</li>
-              <li><span>SQL</span><br />Database</li>
-              <li><span>HTML & CSS</span><br />Frontend tools</li>
+              <li><span>Frontend</span><br>HTML, CSS, JavaScript, JavaScript DOM</li>
+              <li><span>Frontend Framework</span><br>Bootstrap, ReactJS</li>
+              <li><span>Backend</span><br>Java, API Basics</li>
+              <li><span>Backend Framework</span><br>Spring Boot</li>
+              <li><span>Database</span><br>SQL</li>
             </ul>
           </div>
 
-          <div class="contents" id="Intership">
+          <!-- Experience -->
+          <div class="contents" id="experience">
             <ul>
-              <li><span>2023t</span><br />Internship – BSNL, Tiruchirappalli (Telecom Technologies Training).</li>
+              <li><span>BSNL - 2022</span><br>BSNL Office is a telephone company located in Tiruchirappalli.</li>
             </ul>
           </div>
 
+          <!-- Education -->
           <div class="contents" id="education">
-            <ul style="list-style: none; padding: 0; max-width: 400px;">
-              <li style="margin-bottom: 30px;">
-                <span style="display: block; border-bottom: 2px solid #333; padding-bottom: 6px; font-weight: bold; margin-bottom: 10px;">
-                  2023-2025
-                </span>
-                <span style="color: #007BFF; display: block; margin-bottom: 6px;">MSc</span>
-                Computer Science, SASTRA University, Kumbakonam
-              </li>
-              <li>
-                <span style="display: block; border-bottom: 2px solid #333; padding-bottom: 6px; font-weight: bold; margin-bottom: 10px;">
-                  2020-2023
-                </span>
-                <span style="color: #28A745; display: block; margin-bottom: 6px;">BSc</span>
-                Computer Science, Bishop Heber College, Trichy
-              </li>
-              </ul>
+            <ul>
+              <li><span>2023-2025</span><br>MSc Computer Science - Sastra University, Kumbakonam</li>
+              <li><span>2020-2023</span><br>BSc Computer Science - Bishop Heber College, Trichy</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Projects -->
-  <div id="projects">
+  <section id="projects">
     <div class="container">
-      <h1 class="subtit">My Projects</h1>
-      <div class="projectlist">
+      <h1 class="subtit">Projects</h1>
+      <div class="projeclist">
         <div>
           <i class="fa-solid fa-video"></i>
           <h2>Suspicious Activity Detection Using Transfer Learning</h2>
-          <p>Enhanced CCTV surveillance systems using Python and TensorFlow. Implemented Transfer Learning to detect suspicious activities such as shoplifting.</p>
+          <p>Enhanced CCTV surveillance using Python & TensorFlow with Transfer Learning to detect suspicious activities.</p>
+           <a href="https://github.com/Jayasriramsi/SUSPICIOUS-ACTIVITY-DETECTION-USING-TRANSFER-LEARNING"target="_blank"> <br>
+          <i class="fa-brands fa-github"></i> <br> 
+           View on GitHub </a>
         </div>
+
         <div>
           <i class="fa-solid fa-brain"></i>
           <h2>GUI-Based MRI Brain Tumor Classification Using VGG Models</h2>
-          <p>Developed a user-friendly GUI application to classify brain tumors using VGG architecture. Focused on medical imaging and early detection.</p>
+          <p>Developed a user-friendly GUI to classify brain tumors using VGG architecture for medical imaging.</p>
         </div>
+
         <div>
           <i class="fa-solid fa-microscope"></i>
-          <h2>MRI Brain Tumor Identification Using Multi-Class Classification</h2>
-          <p>Designed a CNN-based multi-class model with GUI for real-time MRI scan analysis. Improved diagnostic accuracy by distinguishing between tumor types.</p>
+          <h2>MRI Brain Tumor Identification Using Deep Learning</h2>
+          <p>CNN-based multi-class classification model with GUI for real-time MRI scan analysis.</p>
+            <a href="https://github.com/Jayasriramsi/Enhanced-Brain-Tumor-MRI-Classification-Using-Advanced-Preprocessing-Deep-Learning" target="_blank" rel="noopener"class="github-link"> <br>
+              <i class="fa-brands fa-github"></i><br>
+              View on GitHub
+            </a>
         </div>
       </div>
     </div>
-  </div>
- <!-- Contact -->
-  <div id="contact">
-  <div class="contact-container"> <!-- Flex container -->
+  </section>
 
-    <!-- Left Column -->
-    <div class="conleft">
-      <h1 class="subtit">Contact Me</h1>
-      <a href="mailto:Jayasriram0203@gmail.com">
-        <i class="fa-solid fa-envelope"></i> Jayasriram0203@gmail.com
-      </a>
-      <a href="tel:+919384997258">
-        <i class="fa-solid fa-mobile-retro"></i> +91 9384997258
-      </a>
-
-      <div class="socicon">
-        <a href="https://www.linkedin.com/in/jayasriram27" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Jayasriramsi" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github"></i>
+  <!-- Research -->
+  <section id="research">
+    <div class="container">
+      <h1 class="subtit">Research Projects & Conference Presentations</h1>
+      <div class="research-list">
+        <div class="research-item">
+          <i class="fa-solid fa-presentation-screen"></i>
+          <h3>GUI-Based MRI Brain Tumor Classification Using CNN</h3>
+          <p class="conference">Presented at ICMMCI 2025</p>
+          <p>Advanced research in medical imaging using CNN for accurate brain tumor classification.</p> <br>
+          <a href="https://www.linkedin.com/posts/jayasriram27_icmmci-2025-activity-7375744401614184448-FNIl"
+          target="_blank" rel="noopener"class="linkedin-link">
+          <i class="fa-brands fa-linkedin"></i> <br> 
+          View on LinkedIn
         </a>
       </div>
-
-      <a href="Jayasriram%20S%20I%20Resume.pdf" download class="but but2">Download CV</a>
     </div>
 
-    <!-- Right Column -->
-    <div class="conright">
-      <form name="submit-to-google-sheet">
-        <input type="text" name="Name" placeholder="Your Name" required />
-        <input type="email" name="Email" placeholder="Your Email" required />
-        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-        <button type="submit" class="but but2">Submit</button>
-      </form>
-      <span id="msg"></span>
-    </div>
-  </div> <!-- End of contact-container -->
-  </div>
+        <div class="research-item">
+          <h3>MRI Brain Tumor Identification Using Deep Learning</h3>
+          <p class="conference">Presented at ICMAT 2025</p>
+          <p>Deep learning methodologies for MRI-based brain tumor identification with multi-class classification.</p>
+          
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="conleft">
+          <h1 class="subtit">Contact Me</h1>
+          <div class="contact-info">
+            <a href="mailto:Jayasriram0203@gmail.com" class="contact-link">
+              <i class="fa-solid fa-envelope"></i> Jayasriram0203@gmail.com
+            </a>
+            <a href="tel:+919384997258" class="contact-link">
+              <i class="fa-solid fa-mobile-retro"></i> +91 9384997258
+            </a>
+          </div>
+          <div class="socicon">
+            <a href="https://www.linkedin.com/in/jayasriram27" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Jayasriramsi" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+
+          <a href="Jayasriram S I _ AI engineer.pdf"
+             download="Jayasriram_SI_CV.pdf"
+             class="but but2">Download CV</a>
+        </div>
+
+        <div class="conright">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <div class="button-cent">
+              <button type="submit" class="but but2">Submit</button>
+            </div>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
     <div class="copyright">
-     <p style="font-family: sans-serif;">
-       © Jayasriram S I <i class="fa-solid fa-heart" style="color: red;"></i>
-     </p>
+      <p>Copyright © Jayasriram S I <i class="fa-solid fa-heart"></i></p>
     </div>
-  </div>
+  </section>
 
+  <!-- JavaScript -->
   <script>
-    var tablinks = document.getElementsByClassName("tblink");
-    var tabcontents = document.getElementsByClassName("contents");
-    
-    function opentab(tabname, event) {
-      for (let tablink of tablinks) {
-        tablink.classList.remove("active");
-      }
-      for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active");
-      document.getElementById(tabname).classList.add("active-tab");
+    // Auto-changing hero text
+    const changingText = document.getElementById('changing-text');
+    const textOptions = ['from Ariyalur, India', 'Software Development', 'AI Engineering'];
+    let currentIndex = 0;
+
+    function changeText() {
+      changingText.style.opacity = '0';
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % textOptions.length;
+        changingText.textContent = textOptions[currentIndex];
+        changingText.style.opacity = '1';
+      }, 500);
     }
-  </script>
+    setInterval(changeText, 2000);
 
-  <script>
-    const scriptURL = 'https://script.google.com/a/macros/sastra.ac.in/s/AKfycbzsEqTKl-m1lJ0MTy2YZ3zsHi2BaPFF4PxZbkL7yOs_DhgkXNLqexg9kzYAQ0lbb9lx/exec';
+    // Tabs
+    const tablinks = document.getElementsByClassName("tblink");
+    const tabcontents = document.getElementsByClassName("contents");
+    function opentab(tabname) {
+      for (let tablink of tablinks) tablink.classList.remove("skill");
+      for (let tabcontent of tabcontents) tabcontent.classList.remove("skills1");
+      event.currentTarget.classList.add("skill");
+      document.getElementById(tabname).classList.add("skills1");
+    }
+
+    // Contact Form
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziswLWiQmAPQWoJ4qxpMDEFVhIuGWBU8KQ6W5KW_NAe_rJgQDyOgImRNNWH10r8ci36w/exec';
     const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById('msg');
-    
+    const msg = document.getElementById("msg");
     form.addEventListener('submit', e => {
       e.preventDefault();
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          msg.innerHTML = 'Message sent successfully!';
-          setTimeout(() => (msg.innerHTML = ''), 5000);
+          msg.innerHTML = "Message sent successfully!";
+          msg.style.color = "#61b752";
+          setTimeout(() => msg.innerHTML = "", 3000);
           form.reset();
         })
         .catch(error => {
-          msg.innerHTML = 'Failed to send message. Please try again.';
+          msg.innerHTML = "Error sending message. Please try again.";
+          msg.style.color = "#ff6b6b";
           console.error('Error!', error.message);
         });
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     });
   </script>
 </body>
 </html>
-
-
