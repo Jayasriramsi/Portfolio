@@ -40,10 +40,10 @@
         </ul>
       </nav>
 
-     <div class="hero-content">
+    <div class="hero-content">
   <h1>
     Hi, I'm <span class="highlight">Jayasriram S I</span><br>
-    <span id="changing-text">Zoho Creator Developer | Technical Consultant</span>
+    <span id="changing-text">Aspiring Zoho Creator Developer & Technical Consultant</span>
   </h1>
 </div>
       
@@ -229,21 +229,30 @@
 
   <!-- JavaScript -->
   <script>
-    // Auto-changing hero text
-    const changingText = document.getElementById('changing-text');
-    const textOptions = ['from Ariyalur, India', 'Software Development', 'AI Engineering'];
-    let currentIndex = 0;
+   // Auto-changing hero text
+const changingText = document.getElementById('changing-text');
 
-    function changeText() {
-      changingText.style.opacity = '0';
-      setTimeout(() => {
-        currentIndex = (currentIndex + 1) % textOptions.length;
-        changingText.textContent = textOptions[currentIndex];
-        changingText.style.opacity = '1';
-      }, 500);
-    }
-    setInterval(changeText, 2000);
+const textOptions = [
+  'M.Sc. Computer Science Graduate',
+  'Zoho Creator & Deluge Developer',
+  'CRM & Workflow Automation',
+  'Tech Sales Professional',
+  'Aspiring Technical Consultant'
+];
 
+let currentIndex = 0;
+
+function changeText() {
+  changingText.style.opacity = '0';
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % textOptions.length;
+    changingText.textContent = textOptions[currentIndex];
+    changingText.style.opacity = '1';
+  }, 500);
+}
+
+setInterval(changeText, 2500);
     // Tabs
     const tablinks = document.getElementsByClassName("tblink");
     const tabcontents = document.getElementsByClassName("contents");
