@@ -16,7 +16,7 @@ Skills in Zoho Creator, Zoho CRM, Deluge Scripting, Workflow Automation, Python,
 Academic and professional projects, including my live FinTech application developed using Zoho Creator and other technical projects.
 
 ## 📄 Professional Experience
-Experience as a Sales Development Representative (Tech Sales) and Zoho Consultant Intern, highlighting CRM workflows, customer requirements, and low-code application development.
+Experience as a **Sales Development Representative (Tech Sales)** and Zoho Consultant Intern, highlighting CRM workflows, customer requirements, and low-code application development.
 
 ## 🔬 Research Projects & Conference Presentations
 Research work on deep learning and MRI brain tumor classification presented at academic conferences.
